@@ -4,6 +4,10 @@
     align-items: center;
     height: 70px;
   }
+
+  .chat-list-item:hover {
+    background-color: #F5F5F5;
+  }
   
   .avatar {
       width: 50px;
@@ -13,6 +17,7 @@
   }
   
   .chat-lines {
+      height: 100%;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -20,12 +25,17 @@
       border-bottom: 1px solid #EEE;
       padding-right: 15px;
       margin-left: 15px;
+      
+      flex-wrap: wrap;
+      min-width: 0;
   }
+
   
   .chat-line {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
   }
   
   .chat-name {
@@ -43,4 +53,11 @@
       display: flex;
       width: 100%;
   } 
+
+  .last-message p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
   

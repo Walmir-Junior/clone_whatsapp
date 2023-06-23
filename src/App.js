@@ -5,10 +5,11 @@ import ChatIcon from '@mui/icons-material/Chat'
 import MoreVertIcon from '@mui/icons-material/MoreVert'
 import SearchIcon from '@mui/icons-material/Search'
 import ChatListItem from './Components/ChatListItem/ChatListItem'
+import ChatIntro from './Components/ChatIntro/Chatintro'
 
 const App = () => {
 
-  const [chatList, setChatList] = useState([{}, {}, {}, {}])
+  const [chatList, setChatList] = useState([{}, {}, {}, {},{}, {}, {}, {}, {}, {}, {}, {}])
 
   const renderChatList = chatList && chatList.map((item, key) => {
     return (
@@ -57,7 +58,7 @@ const App = () => {
       </aside>
 
       <div className='content-area'>
-        ...
+        <ChatIntro /> 
       </div>
 
     </main>

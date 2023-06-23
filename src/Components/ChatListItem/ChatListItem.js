@@ -16,7 +16,7 @@ const ChatListItem = () => {
 
                 <div className="chat-line">
                     <div className="last-message">
-                        <p>ultima mensagem</p>
+                        <p>ultima mensagem ultima mensagem ultima mensagemc  ultima mensagem ultima mensagemc</p>
                     </div>
                 </div>
 
